@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abami Cursos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #F68F72;
+                        
+        }
+
+        .img-cabeçalho {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .cabeçalho {
+            color: #F3EDE7;
+            font-size: 22px;
+            text-align: center;
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .produto {
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-basis: 20%;
+            font-family: 'STIX Two Math', serif;
+            border: 1px solid #ffa280;
+            background-color: #ffa280;
+            opacity: 0,5;
+            width: 200px; 
+
+        }
+
+        .titulo-produto {
+            color: white;
+        }
+
+        .img-produto {
+            width: 150px;
+        }
+
+        .description {
+            text-align: center;
+            margin: 12px 10px;     
+            font-size: 13px;
+            font-weight: 900;
+            color: #054f77;
+        }
+
+        .price {
+            font-weight: 900;
+            font-size: 20px;
+            color: #F3EDE7;
+        }
+
+        .buy-button {
+            margin: 5px 0;
+            border-radius: 10px;     
+            padding: 5px;          
+            background-color: #054f77;
+            border: 1px solid #054f77;
+            color: #F3EDE7;
+        }
+
+        .buy-button:hover {         
+            cursor: pointer;       
+            background-color: black;
+            color: #F3EDE7;
+        }
+
+        @media (max-width: 300px) {
+            .cabeçalho {
+                flex-basis: 100%;
+            }
+
+            .produto {
+                flex-basis: 100%;
+            }
+
+            .apresentação {
+                width: 100%;
+            }
+
+            .rodapé {
+                flex-basis: 100%;
+            }
+
+            .img-cabeçalho {
+                display: none;
+            }
+           
+
+        }
+
+        .container {
+            display:flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .sessao-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .legenda-form {
+            color: #014264;
+            font-size: 24px;
+            font-weight: 900;
+            text-align: center;
+            font-family: 'STIX Two Math', serif;
+        }
+
+        .formulario {
+            display: grid;           
+            
+                        
+        }
+
+        .palavras-do-form {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #F3EDE7;
+            font-weight: 700;
+            text-align: center; 
+        }
+
+        .card-container {
+            background-color: #054f77;
+            border-radius: 25px;
+            padding: 25px;
+            max-width: 450px;
+        
+                                
+        }
+            
+        input{
+            width: 100%;
+            height: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: 12px;
+            
+            
+        
+        }
+
+        .apresentação {
+            align-items: center;
+            width: 600px;
+            font-family:Arial, Helvetica, sans-serif;
+            line-height: 1.25;
+            font-size: 16px;
+            color: #F3EDE7;
+            margin-left: auto;
+            margin-right: auto;
+        
+            
+        }
+
+        .quem-somos {
+            color: #F3EDE7;
+            font-family: 'STIX Two Math', serif;
+            font-size: 24px;
+            text-align: center;
+
+        }
+       
+        
+        .rodapé {
+            color: white;
+            text-align: center;
+            height: 150px;
+            padding: 25px;
+            background-color: #054f77;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    
+    <section class=img-cabeçalho>
+        <img src="https://i.ibb.co/W2575sc/ABAMI.png" width="1000" height="250" alt="banner capa" title="banner-capa" />
+    </section>
+    <section class="cabeçalho">
+            <p>A Abami Cursos é a melhor plataforma online de qualificação em Economia Criativa do Brasil.</p>
+            <p>Confira as ofertas nesse mês de julho e alavanque a sua carreira!</p>
+    </section>
+    <section>
+        <div class="container">
+            <div class="produto">
+                <h3 class="titulo-produto">Design de Moda</h3>
+                <img class="img-produto" src="https://i.ibb.co/JFj4xKT/moda-1.jpg" alt="moda" title="moda" />
+                <p class="description">Sofistique as suas criações com dicas de designers referência no mercado de moda.</p>
+                <span class="price">Preço: R$ 200,00</span>
+                <button class="buy-button">Adicionar ao carrinho</button>
+            </div>
+    
+            <div class="produto">
+                <h3 class="titulo-produto">Autogestão de Carreira</h3>
+                <img class="img-produto" src="https://i.ibb.co/J2KrWLj/musicos.jpg" alt="música" title="musica" />
+                <p class="description">Aprenda como gerir a sua própria carreira musical.</p>
+                <span class="price">Preço: R$ 150,00</span>
+                <button class="buy-button">Adicionar ao carrinho</button>
+            </div>
+    
+            <div class="produto">
+                <h3 class="titulo-produto">Acabamento em Artesanato</h3>
+                <img class="img-produto" src="https://i.ibb.co/z6mPKMY/swapnil-dwivedi-w46t-RF64q-Nc-unsplash.jpg" alt="artesanato"
+                    title="artesanato" />
+                <p class="description">Melhore o acabamento de seus produtos e aumente o número de clientes.</p>
+                <span class="price">Preço: R$ 210,00</span>
+                <button class="buy-button">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="container">    
+            <div class="produto">
+                <h3 class="titulo-produto">Gastronomia Italiana</h3>
+                <img class="img-produto" src="https://i.ibb.co/G0w53BQ/gastronomia.jpg" alt="gastronomia" title="gastronomia" />
+                <p class="description">
+                    Aprenda os segredos da culinária italiana e incremente o seu restaurante.</p>
+                <span class="price">Preço: R$ 250,00</span>
+                <button class="buy-button">Adicionar ao carrinho</button>
+            </div>
+    
+            <div class="produto">
+                <h3 class="titulo-produto">Planejamento Estratégico</h3>
+                <img class="img-produto" src="https://i.ibb.co/njgP4db/planejamento.jpg" alt="planejamento" title="planejamento" />
+                <p class="description">Saiba como planejar o seu negócio criativo e cresça em seu nicho.</p>
+                <span class="price">Preço: R$ 120,00</span>
+                <button class="buy-button">Adicionar ao carrinho</button>
+            </div>
+    
+            <div class="produto">
+                <h3 class="titulo-produto">Formação de Preço</h3>
+                <img class="img-produto" src="https://i.ibb.co/G2LnKVS/formacaodepreco.jpg" alt="formação de preço" title="formacao-de-preco" />
+                <p class="description">Aprenda a calcular o valor dos seus produtos e serviços corretamente.</p>
+                <span class="price">Preço: R$ 80,00</span>
+                <button class="buy-button">Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sessao-form">
+        <div>
+            <div class="legenda-form">
+                <h2>Cadastre-se para não perder as ofertas!</h2>
+            </div>
+            <div class="card-container">
+                <div id="content">
+                <form id="formulario">
+                    <input type="text" placeholder="Nome" id="nome">
+                    <input type="text" placeholder="E-mail" id="email">
+                    <input type="submit" value="Cadastrar">
+                </form>
+                <script>
+                    const formulario = document.getElementById('formulario')
+
+                    formulario.addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        let nome = document.getElementById('nome').value;
+                        let email = document.getElementById('email').value;
+                        let data = {
+                            nome,
+                            email,
+                        }
+                        let convertData = JSON.stringify(data);
+
+                        localStorage.setItem('lead', convertData)
+
+                        let content =document.getElementById('content')
+
+                        let carregando = '<p><span class="palavras-do-form">Carregando...</span></p>'
+
+                        let pronto = '<p><span class="palavras-do-form">Pronto! Em breve você receberá as nossas promoções.<span></p>'
+
+                        content.innerHTML = carregando 
+
+                        setTimeout(() => {
+                            content.innerHTML = pronto
+                        }, 1000)
+                        
+                    })
+                </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="quem-somos">
+            <h2>A Abami Cursos</h2>
+        </div>
+        <div class="apresentação">
+    
+            <p>A Criatividade é uma das maiores riquezas na atualidade. A economia criativa mobiliza bilhões de dólares todos os anos ao redor do mundo. Essa é uma grande oportunidade para os profissionais que atuam ou pretendem atuar em diferentes áreas da economia criativa. </p>
+    
+            <p>No entanto, os profissionais que se aventuram pela Economia Criativa costumam lidar com desafios, como:
+            <ol>
+                <li>Baixa venda e, consequentemente, pouca lucro;</li>
+                <li>Pouco acesso a treinamento e fortalecimento da capacidade empreendedora;</li>
+                <li>Dificuldade de divulgação dos trabalhos e acesso aos mercados</li>
+                </p>
+        <div>
+            <p>Se identificou? Tudo bem, porque a Abami Cursos surge como resposta a essas questões. Em parceria com especialistas em diferentes segmentos da economia criativa, a Abami desenvolve qualificações empreendedoras para você a conseguir o sucesso tão esperado. São cursos para artesãos, gastrônomos, designers de moda e produtos, novas marcas e novos artistas. Não perca tempo, vem para a Abami!</p>
+        </div>
+        </div>
+    </section>
+    <footer class="rodapé">
+        &copy; Todos os direitos reservados
+    </footer>
+</body>
+</html>
